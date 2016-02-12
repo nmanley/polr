@@ -30,7 +30,7 @@
             include ('version.php');
             require_once 'lib-password.php';
             date_default_timezone_set('UTC');
-            $mysqlnd = function_exists('mysqli_fetch_all');
+            $mysqlnd = function_exists('mysqli_fetch_assoc');
 
 			if (!$mysqlnd) {
 				echo "<br /><br /><p>Error: You don't seem to have the <code>MySQL native driver. </code>
